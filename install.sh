@@ -9,7 +9,7 @@ do
     then
       echo symlinked $HOME/$fn
       # rm -i $HOME/$fn
-      mv $HOME/$fn $HOME/.Trash/
+      mv $HOME/$fn $HOME/.Trash
     fi
     ln -s $HOME/dotfiles/$dotfile $HOME/$fn
   fi
