@@ -130,7 +130,7 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([%0-9]#)*=0=01;31
 #----------------------------------------------------------
 # ディレクトリ名でもcd
 setopt auto_cd
-# cdのタイミングで自動的にpushd.直前と同じ場合は無視
+# # cdのタイミングで自動的にpushd.直前と同じ場合は無視
 setopt auto_pushd
 setopt pushd_ignore_dups
 typeset -ga chpwd_functions

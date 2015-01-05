@@ -147,7 +147,8 @@ au BufRead,BufNewFile *.txt set syntax=hybrid
 "-----------------------------------------------------
 
 " if_luaが有効ならneocompleteを使う
-NeoBundle has('lua') ? 'Shougo/neocomplete' : 'Shougo/neocomplcache'
+NeoBundle 'Shougo/neocomplcache'
+" NeoBundle has('lua') ? 'Shougo/neocomplete' : 'Shougo/neocomplcache'
 
 if neobundle#is_installed('neocomplete')
   " neocomplete用設定
@@ -449,7 +450,7 @@ endfunction
 
 " ~/.pyenv/shims を $PATH に追加する
 " これを行わないとpythonが正しく検索されない
-call s:IncludePath(expand("~/.pyenv/shims"))
+" call s:IncludePath(expand("~/.pyenv/shims"))
 
 " エラーチェック
 NeoBundleLazy "alfredodeza/khuno.vim", {
@@ -619,7 +620,7 @@ let g:netrw_nogx = 1 " disable netrw's gx mapping.
 "-----------------------------------------------------
 NeoBundleLazy 'thinca/vim-quickrun', {
       \ 'autoload': {
-      \ 'filetypes': ['ruby',  'python', 'sh', 'scala', 'java']
+      \ 'filetypes': ['ruby', 'python', 'sh', 'scala', 'java']
       \}}
 nmap <space>r :QuickRun -runner vimproc <CR>
 " nmap <space>r <plug>(quickrun)
